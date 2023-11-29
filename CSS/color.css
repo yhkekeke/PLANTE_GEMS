@@ -1,0 +1,49 @@
+.color_black{
+    color: #140A0F;
+}
+.color_lightPurple{
+    color: #B96982;
+}
+.color_darkPurple{
+    color: #9C1F43;
+}
+.color_lightgray{
+    color: #ebe1e1;
+}
+.color_darkgray{
+    color: #646464;
+}
+.color_brown{
+    color: #462323;
+}
+.color_logoBlue{
+    color: #0F2864;
+}
+.color_logoPink{
+    color: #faa5a5;
+}
+.color_pinkwhite{
+    color: #fffafa;
+}
+.color_white{
+    color: #fff
+}
+
+.bgc_pinkwhite{
+    background-color: #fffafa;
+}
+.bgc_logoPink{
+    background-color: #faa5a5;
+}
+.bgc_lightPurple{
+    background-color: #B96982;
+}
+.bgc_white_o{
+    background-color: rgb(255, 255, 255,0.7);
+}
+.bgc_white{
+    background-color: #fff;
+}
+
+
+

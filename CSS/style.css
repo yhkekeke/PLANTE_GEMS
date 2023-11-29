@@ -1,0 +1,333 @@
+/* common font */
+/* 首選Zen Old Mincho，備用Shippori Mincho */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+/* 中文P 思源明體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+/* 英文標題手寫體 Petit Formal Script */
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+.box_enTitle{
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: 15%;
+    color: #fff;
+    text-align: center;
+}
+.enTitle{
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: 15%;
+    color: rgb(185, 105, 130, 0.5);
+}
+.name{
+    /* h2的字體 */
+    color: #0F2864;
+}
+
+h1{
+    font-family: 'Zen Old Mincho', 'Shippori Mincho', 'Noto Serif TC', serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 15%;
+}
+h2{
+    font-family: 'Zen Old Mincho', 'Shippori Mincho', serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 20%;
+}
+
+h3{
+    font-family: 'Zen Old Mincho', 'Shippori Mincho', 'Noto Serif TC', serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 15%;
+    color: #9C1F43;
+}
+h4{
+    font-family: 'Zen Old Mincho', 'Shippori Mincho', 'Noto Serif TC', serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 15%;
+    color: #462323;
+}
+p, li{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 15%;
+    color: #140A0F;
+}
+.p2{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 12%;
+    color: #140A0F;
+}
+.shop li, .p3{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 12%;
+    color: #140A0F;
+}
+body{
+    background-color: #fffafa;
+    text-align: justify;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.pagetitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    text-align: center;
+    margin: auto;
+}
+
+/* path */
+.path{
+    color: #646464;
+    font-family: 'Noto Sans TC', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 12%;
+    text-align: left;
+    padding-bottom: 4px;
+    margin-bottom: 54px;
+}
+
+.path a:not(:last-child):hover {
+    box-shadow: 0 1px 0 #646464;
+    padding-bottom: 4px;
+}
+.path a:last-child{
+    color: #0F2864;
+    font-weight: 500;
+}
+.path a:last-child:hover{
+    box-shadow: 0 1px 0 #0F2864;
+    padding-bottom: 4px;
+}
+
+/* morebtn_white */
+.morebtn_white>h3{
+    color: #fffafa;
+}
+.morebtn_white>h4{
+    color: #fffafa;
+}
+.morebtn_white_line{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 0.8px;
+    background-color: #fffafa;
+    margin: 14px 0px 0px;
+}
+.morebtn_white_line::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+    background-color: #fffafa;
+    border-radius: 50%;
+    transform: translate(-90px, -5px);
+}
+.morebtn_white_line::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #fffafa;
+    border-radius: 50%;
+    transform: translate(88px, -1px);
+}
+
+/* morebtn_pink */
+.morebtn_pink>p{
+    color: #faa5a5;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+.morebtn_pink>h4{
+    color: #faa5a5;
+}
+.morebtn_pink_line{
+    display: inline-block;
+    position: relative;
+    width: 116px;
+    height: 0.8px;
+    background-color: #faa5a5;
+}
+.morebtn_pink_line::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+    background-color: #faa5a5;
+    border-radius: 50%;
+    transform: translate(-58px, -5.5px);
+}
+.morebtn_pink_line::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #faa5a5;
+    border-radius: 50%;
+    transform: translate(56px, -1.5px);
+}
+button[class*="morebtn"]:hover p{
+    text-shadow: -2px 1px 2px rgb(15,40,100,0.3);
+}
+button[class*="morebtn"]:hover div{
+    box-shadow: 0 1px 2px rgb(15,40,100,0.3);
+}
+
+
+/* circle_btn */
+button[class*="circle_btn"] {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+[class*="circle_btn"] h4{
+    color: #9C1F43;
+    text-align: center;
+    vertical-align: middle;
+    /* margin: auto 0; */
+}
+[class*="circle_btn"] div{
+    position: relative;
+}
+[class*="circle_btn"] img{
+    display: block;
+}
+.circle_btn div::after{
+    content: url("/pic/circle_btn_white_dropshadow__arrow.png");
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 50px;
+    bottom: 50px;
+    z-index: 1;
+    transform: translate(-45%, -88%);
+}
+.circle_btn_purple div::after{
+    content: url("/pic/circle_btn_purple_dropshadow__arrow.png");
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 50px;
+    bottom: 50px;
+    z-index: 1;
+    transform: translate(-48%, -54%);
+}
+button[class*="circle_btn"]:hover h4{
+    text-shadow: -1px 1px 2px rgb(15,40,100,0.3);
+}
+button[class*="circle_btn"]:hover h3{
+    text-shadow: -2px 1px 2px rgb(15,40,100,0.5);
+}
+button[class*="circle_btn"]:hover img{
+    animation: rotate 4s forwards ease; /* hover 時執行旋轉動畫 */
+}
+@keyframes rotate { 
+    50% { transform: rotate(180deg); } /* 旋轉半圈 */
+    100% { transform: rotate(0deg); } /* 回到原位，停留在這個樣子 */
+}
+
+
+/* news-card/bar */
+.card_words>p:first-child{
+    color: #646464;
+}
+.card_title{
+    line-height: 50px;
+    margin: 16px 0 16px;
+}
+/* .card_time{
+    font-family: 'Noto Sans TC', serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 12%;
+    color: #140A0F;
+} */
+
+/* box */
+.box_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 70px 96px 70px;
+    background-color: rgb(255, 255, 255,0.7);
+    border-radius: 12px;
+}
+/* .box_describe{ 各自寫
+    margin: 40px 0;
+} */
+.box_describe p+p{
+    margin-top: 32px;
+}
+
+
+.usualWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 160px;
+}
+
+.usual_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+.usual_content>.pagetitle>.name{
+    margin: auto;
+    text-align: center;
+}
+/* .item_solo{ 各家自己寫
+    width: 100%;
+    display: flex;
+} */
+/* .item_solo+.item_solo{ 各家自己寫
+    margin-top: 80px;
+}
+.item_solo_content ul{ 各家自己寫
+    list-style-type: disc;
+} */
