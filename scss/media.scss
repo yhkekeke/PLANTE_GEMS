@@ -72,7 +72,6 @@
         background-image: url(../pic/circleBTN_pw_C_md.png);
         background-position: center;
     }
-    /* clickedBTN */
     .circleBTN.dpp div.clickedCBTN{
         background-image: url(../pic/circleBTN_pw_C_md.png);
         opacity: 1;
@@ -83,7 +82,20 @@
         opacity: 1;
         animation: rotate 4s forwards ease infinite;
     }
-
+    .circleBTN div{
+        width: 24px;
+        height: 24px;
+    }
+    .circleBTN p{
+        background-size: contain;
+        width: 8px;
+        height: 8px;
+        right: 15px;
+    }
+    .circleBTN>p.down{
+        transform: rotateZ(90deg) translate(0, 1px);
+    }
+    
     /* moreBTN */
     .moreBTN p+div{
         margin: 0;
@@ -99,7 +111,7 @@
             width: max-content;
         }
         .logo>img{
-            /* width: 50%; */
+            height: 10vw;
             transform: translate(0,0);
         }
         div.burger{
@@ -497,19 +509,6 @@ aside li{
         max-height: 85vh;
         padding: 8px 16px 40px;
     }
-    .circleBTN div{
-        width: 24px;
-        height: 24px;
-    }
-    .circleBTN p{
-        background-size: contain;
-        width: 8px;
-        height: 8px;
-        right: 15px;
-    }
-    .circleBTN>p.down{
-        transform: rotateZ(90deg) translate(0, 1px);
-}
 }
 }
 

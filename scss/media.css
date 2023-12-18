@@ -90,6 +90,15 @@
   .moreBTN p + div {
     margin: 0;
   }
+  .moreBTN{
+    width: 60px;
+  }
+  .moreBTN h4{
+    margin-bottom: -10px;
+  }
+  .moreBTN::before, #index .moreBTN::before{
+    transform: translate(-6px, 32px);
+  }
 }
 @media screen and (max-width: 768px) {
   header {
@@ -102,7 +111,7 @@
     width: max-content;
   }
   header .logo > img {
-    /* width: 50%; */
+    height: 10vw;
     transform: translate(0, 0);
   }
   header div.burger {
@@ -182,7 +191,7 @@
   #index #b612 main > div {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 18% 25% 18%;
-    margin-bottom: -510px;
+    margin-bottom: -80vw;
   }
   #index #b612 main img {
     width: 100%;

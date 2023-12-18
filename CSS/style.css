@@ -77,7 +77,7 @@ img{
     margin-bottom: 0;
 }
 h1{
-    font: 700 32px/136.363636% var(--Fh);
+    font: 700 32px/43px var(--Fh);
 }
 h2{
     font: 700 30px/135% var(--Fh);
@@ -265,7 +265,7 @@ iconify-icon{
     width: 15px;
     height: 15px;
     position: relative;
-    right: 30px;
+    right: 25px;
     z-index: 999;
     margin: 0;
 }
@@ -440,7 +440,7 @@ button[class*="circle_btn"]:hover h3{
 
 main{
     width: 100%;
-    margin: 15vh auto 41.6666666vh;
+    margin: 2vw auto 6vw;
     display: grid;
     gap: 88px;
 }
@@ -486,7 +486,7 @@ p.p2+p{
     width: 100%;
     position: absolute;
     top: 36vh;
-    /* left: 16vw; */
+    right: 20vw;
 }
 #sliderBoard>#banner .container>div{
     display: grid;
@@ -512,7 +512,7 @@ p.p2+p{
 	height: 50px;
     margin-top: -100px;
     position: absolute;
-    bottom: 24px;
+    bottom: 8vh;
     cursor: pointer;
 }
 #bannerButton li{
@@ -988,7 +988,7 @@ body:not(#index) #news article{
     margin-top: 0.666666666vw;
 }
 #news time{
-    margin-top: 20px;
+    margin-top: 1vw;
     margin-bottom: auto;
     display: block;
 }
@@ -1006,7 +1006,7 @@ body:not(#index) #news article{
 }
 #news .news_tags>div, #news time{
     color: var(--Cdg);
-    line-height: 2vw;
+    line-height: 2;
     font-weight: 200;
     letter-spacing: 12%;
 }
@@ -1312,6 +1312,7 @@ section.oneItem:hover .textBGC,
     align-items: flex-end;
 }
 #index div>.phoneTitle{
+    margin: 0 10vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -1377,10 +1378,10 @@ section.oneItem:hover .textBGC,
     margin-bottom: 2vw;
 }
 #index #news>div .moreBTN::before{
-    transform: translate(-6px, 56px);
+    transform: translate(-6px, 70px)
 }
 #index #news .spotlight{
-    height: 420px;
+    height: auto;
     margin: auto 0;
     overflow: hidden;
     display: flex;
@@ -1391,7 +1392,8 @@ section.oneItem:hover .textBGC,
     height: max-content;
     opacity: 1;
     display: block;
-    height: 400px;
+    /* height: 400px; */
+    /* padding-bottom: 2vw; */
 }
 #index #news section>div{
     width: 100%;
@@ -1409,8 +1411,8 @@ section.oneItem:hover .textBGC,
     }
 }
 #index #news article{
-    margin: 0 0.666666666vw 0.666666666vw;
-    padding: 1vw;
+    padding: 1vw 1.5vw 1vw;
+    height: 170px
 }
 #index #news p{
     line-height: 30px;
@@ -1418,10 +1420,12 @@ section.oneItem:hover .textBGC,
     color: var(--Cbrown);
 }
 #index #news .news_tags{
-    margin: 20px 0 0 auto;
+    margin: 1vw 0 0 1vw;
     align-items: flex-start;
 }
-
+#index #news br{
+    display: none;
+}
 /* index 4 concact */
 #index #contact{
     /* margin-bottom: -88px; */
@@ -1509,8 +1513,9 @@ header nav dt{
 }
 footer dl{
     color: var(--Cdg);
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
+
 header nav dd{
     display: none;
 }
@@ -1622,6 +1627,7 @@ footer .icon div{ /* icon圓邊 */
     left: -9px;
     width: 32px;
     height: 32px;
+    aspect-ratio: 1;
     border: 1px var(--Cdg) solid;
     border-radius: 50%;
     z-index: -1;
@@ -1643,6 +1649,10 @@ footer dl:not(:last-of-type){
 footer dd iconify-icon{
     display: inline-block;
     margin-right: 0.666666666vw;
+}
+footer br{
+    display: none;
+    margin-left: calc(16px + 0.666666666vw);
 }
 footer dl a:hover{
     display: inline-block;
