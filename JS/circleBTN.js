@@ -1,0 +1,13 @@
+$(function(){
+    $(".circleBTN").click(function(e){
+        $(this).addClass("clickedCBTN");
+        $(this).find("div").addClass("clickedCBTN");
+        $(this).find("p").addClass("clickedCBTN");
+        $(this).find("h4").addClass("clickedCBTN");
+    }).mouseleave(function(e){
+        $(this).removeClass("clickedCBTN");
+        $(this).find("div").removeClass("clickedCBTN");
+        $(this).find("p").removeClass("clickedCBTN");
+        $(this).find("h4").removeClass("clickedCBTN");
+    })
+})

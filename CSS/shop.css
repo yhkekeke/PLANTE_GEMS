@@ -9,8 +9,8 @@
     height: 2300px;
     border-radius: 500px 0 0 0 ;
     background-image: linear-gradient(to bottom, 
-    rgb(233,203,211,0.05) 0%, 
-    rgb(180,95,120,1) 100%);
+    var(--ClinearS) 0%,
+    var(--ClinearE) 100%);
 }
 .usual_content{
     gap: 100px;
@@ -36,27 +36,29 @@
     list-style-type: disc;
 }
 .server li{
-    font-family: 'Noto Serif TC', serif;
+    font-family: var(--Fp);
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 12%;
-    color: #140A0F;
+    color: var(--Cblack);
     margin-top: 8px;
 }
-.addr>div, .phone, .time, .server>div{
+address>div, .phone, time, .server>div{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
-.shop .item_content img{
-    display: block;
-}
-.addr>p, .server li{
+
+/* iconify-icon{
+    display: inline-block;
+    margin-right: 20px;
+} */
+address>p, .server li{
     margin-left: 44px;
 }
-.shop .addr{
+address{
     margin-top: 24px;
 }
 
@@ -66,7 +68,7 @@
     background-repeat: no-repeat;
     /* position: absolute;
     left: 0; */
-    border-radius: 0 0 10% 0 ;
+    border-radius: 0 0 12px 0 ;
     height: 70%;
     width: 96.6667%;
     margin: 154px 0;
@@ -87,12 +89,4 @@
 .item_map{
     width: 600px;
 }
-iframe{
-    display: block;
-    border-radius: 12px;
-    box-shadow: 1px 2px 2px rgb(15,40,100,0.3);
-}
-#BanqiaoBranch iframe{
-    border-radius: 12px;
-    box-shadow: -1px 2px 2px rgb(15,40,100,0.3);
-}
+

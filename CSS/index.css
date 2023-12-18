@@ -25,16 +25,21 @@
 .banner_info{
     margin: 384px 96px 500px auto;
     text-align: right;
-    color: #fffafa;
+    color: var(--Cpw);
 }
 .banner_info_slogan{
     margin-bottom: 40px;
-    text-shadow: -2px 1px 2px rgb(15,40,100,0.5);
+    text-shadow: var(--S-2_1_2) var(--CLogoB50p);
 }
 .banner .circle_btn h4{
-    text-shadow: -2px 1px 2px rgb(15,40,100,0.4);
+    text-shadow: var(--S-2_1_2) var(--CLogoB40p);
     text-align: center;
-    color: #fffafa;
+
+}
+.banner .circle_btn.pw h4{
+    text-shadow: var(--S-2_1_2) var(--CLogoB40p);
+    text-align: center;
+    color: var(--Cpw);
 }
 .banner .circle_btn{
     justify-content: flex-start;
@@ -137,8 +142,8 @@
 }
 .card{
     border-radius: 12px;
-    background-color: #fff;
-    border: 0.5px solid #ebe1e1;
+    background-color: var(--Cwhite);
+    border: 0.5px solid var(--Clg);
 }
 .card img{
     display: block;
@@ -155,7 +160,7 @@
 .contact_bg{
     background-image: url("/pic/contact_bg.png");
     background-repeat: no-repeat;
-    border-radius: 0 0 10% 0 ;
+    border-radius: 0 0 12px 0 ;
     width: 96.6667%;
     margin: 154px 0;
 }

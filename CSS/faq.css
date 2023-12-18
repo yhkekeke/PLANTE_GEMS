@@ -1,48 +1,46 @@
-.faq_bg{
-    background-image: url("/pic/faq_bg.png") ;
-    background-repeat: repeat;
-}
+/* 
 .faq{
     margin-bottom: 200px;
 }
 .pagetitle{ margin-bottom: 70px; }
 .faq_content{
     width: 100%;
-}
-.faq_nav{
+} */
+/* .faq_nav{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-}
-.faq_nav h4{
+    gap: 8px;
+    margin-left: 16px;
+} */
+/* .faq_nav p{
     width: 200px;
     height: 60px;
     padding: auto;
-    border-radius: 20px 20px 0 0;
+    border-radius: 12px 12px 0 0;
     text-align: center;
     cursor: pointer;
-}
-.faq_nav h4:hover{
-    box-shadow: -1px 0 2px rgb(15,40,100,0.3);
+} */
+.faq_nav p:hover{
+    box-shadow: var(--S-1_0_2) var(--CLogoB30p);
     /* padding-top: 2px; */
     /* padding-left: 2px; */
     font-weight: normal;
     font-weight: 500;
-    text-shadow: -1px -1px 1px rgb(15,40,100,0.2);
+    text-shadow: var(--S-1_-1_1) var(--CLogoB20p);
 }
 
 /* 隱藏跟顯示暫時這樣寫 */
-nav h4:first-of-type{
-    background-color: #B96982;
-    color: #fff;
+/* nav p:not(:first-of-type){
+    color: var(--Clpp);
+    border-top: 1px solid var(--Clpp);
+    border-left: 0.5px solid var(--Clpp);
+    border-right: 0.5px solid var(--Clpp);
+} */
+nav p:first-of-type{
+    background-color: var(--Clpp);
+    color: var(--Cwhite);
     font-weight: 600;
-}
-nav h4:not(:first-of-type){
-    color: #B96982;
-    border-top: 1px solid #B96982;
-    border-left: 0.5px solid #B96982;
-    border-right: 0.5px solid #B96982;
 }
 div.faq_bars:not(.gemKnowledge), .faq_a{
     display: none;
@@ -51,55 +49,48 @@ div.faq_bars:not(.gemKnowledge), .faq_a{
     display: block;
 }
 .show .faq_q h2, .show .faq_q p{
-    color: #9C1F43;
-}
-.show .faq_q p{
-    font-weight: 600;
+    color: var(--Cdpp);
 }
 
 
-
-.faq_bars{
-    border: 1px solid #B96982;
-    border-radius: 0 12px 20px 20px;
+/* .faq_bars{
+    border: 1px solid var(--Clpp);
+    border-radius: 12px;
     max-width: 1200px;
     padding: 40px;
-    /* gap: 40px; */
-    box-shadow: -1px 1px 2px rgb(15,40,100,0.2);
-}
-.faq_bar{
+    /* gap: 40px;
+    box-shadow: var(--S-1_1_2) var(--CLogoB20p);
+} */
+/* .faq_bar{
     width: 100%;
-    border-bottom: 1px solid #9C1F43;
+    border-bottom: 1px solid var(--Cdpp);
     margin-bottom: 20px;
     cursor: pointer;
-    border-radius: 0 6px 10px 10px;
-}
+} */
 .faq_bar:hover{
-    box-shadow: -1px 1px 2px rgb(15,40,100,0.3);
-    padding-bottom: 2px;
-    padding-left: 2px;
+    background-color: rgb(180,95,120,0.2);
 }
-.faq_bar:hover img{
+/* .faq_bar:hover img{
     animation: rotate 4s infinite ease;
-}
+} */
 
-.faq_q{
+/* .faq_q{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #462323;
+    color: var(--Cbrown);
     margin-bottom: 20px;
     padding-top: 20px;
     margin-left: 20px;
     padding-right: 20px;
-    /* outline: black solid 1px; */
-}
-.faq_q>h2{
-    color: #646464;
-    /* outline: green solid 1px; */
+    /* outline: black solid 1px;
+} */
+/* .faq_q>h2{
+    color: var(--Cdg);
+    /* outline: green solid 1px;
     height: 100%;
-}
-.faq_q>p{
+} */
+/* .faq_q>p{
     margin-left: 20px;
     margin-right: auto;
     font-weight: 500;
@@ -107,18 +98,18 @@ div.faq_bars:not(.gemKnowledge), .faq_a{
     position: relative;
     bottom: 0;
     width: 100%;
-    /* outline: blue solid 1px; */
-}
-.faq_q button{
+    /* outline: blue solid 1px;
+} */
+/* .faq_q button{ */
     /* width: 100%; */
     /* outline: orange solid 1px; */
-}
-.faq_q img{
+/* } */
+/* .faq_q img{
     display: block;
-    /* width: 100%; */
-}
-.faq_a{
+    /* width: 100%;
+} */
+/* .faq_a{
     line-height: 30px;
-    color: #140A0F;
+    color: var(--Cblack);
     margin:0 40px 60px 60px;
-}
+} */

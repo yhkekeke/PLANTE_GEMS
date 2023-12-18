@@ -46,7 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 a{
     color: inherit; /* 繼承父元素的文字顏色 */
     text-decoration: none; /* 移除底線 */
@@ -57,4 +56,9 @@ button {
     padding: 0;
     margin: 0;
     cursor: pointer; /* 如果需要保留點擊效果 */
+}
+iconify-icon {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
 }

@@ -1,27 +1,56 @@
-<link rel="stylesheet" href="CSS/header.css">
-<div class="header_bg">
-    <header>
-        <div id="index" class="header_brand">
-            <a href="index.html"><img src="pic/header_brand_logo.png" alt="brand_logo"></a>
+<script src="../JS/common.js"></script>
+
+<header>
+    <a href="../index.html" class="logo">
+        <img src="/pic/header_logo.png" alt="brand_logo">
+    </a>
+    <div class="burger">
+        <iconify-icon icon="prime:bars" style="color: white;" width="40"></iconify-icon>
+    </div>
+    <nav>
+        <dl>
+            <a href="../about.html"><dt>關於我們</dt></a>
+            <dd>
+                <a href="../about.html#gurantee">專業保證</a>
+                <a href="../about/shop.html">店鋪資訊</a>
+                <a href="../about/shop.html#contact">聯絡我們</a>
+            </dd>
+        </dl>
+        <dl>
+            <a href="../collections.html"><dt>珠寶系列</dt></a>
+            <dd>
+                <a href="../collections/b612.html">B612</a>
+                <a href="../collections/kepler.html">克卜勒</a>
+                <a href="../collections/starOfOcean.html">星辰大海</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="../news.html">最新消息</a>
+        </dl>
+        <dl>
+            <dt><a href="../faq.html">常見問題</a></dt>
+        </dl>
+    </nav>
+    <div class="icon">
+        <div class="search">
+            <iconify-icon icon="majesticons:search-line" style="color: white;"></iconify-icon>
+            <input type="text" placeholder="Search..." class="search_input">
+            <iconify-icon icon="iconamoon:close-light" class="close" style="color: #b96982;"></iconify-icon>
         </div>
-        <div class="header_content">
-            <nav class="header_nav">
-                <a href="about.html">關於我們</a>
-                <a href="collections.html">寶石系列</a>
-                <a href="news.html">最新消息</a>
-                <a href="faq.html">常見問題</a>
-            </nav>
-            <div class="header_icon">
-                <div class="header_icon_search">
-                    <input type="text" class="header_icon_search_input">
-                    <img src="pic/header_icon_search.png" alt="header_icon_search">
-                </div>
-                <a href="member.html">
-                    <div class="header_icon_mem" id="member">
-                        <img src="pic/header_icon_mem.png" alt="header_icon_member">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
-</div>
+        <a class="member">
+            <iconify-icon icon="ion:person" style="color: #fff;"></iconify-icon>
+        </a>
+    </div>
+</header>
+
+<!-- fixed right side -->
+<!-- <a href="mailto: server@plantegems.tw" class="wrap sticky">
+    <img src="../pic/circleBTN_dpp_C.png" alt="立即預約">
+    <h4>立即預約</p>
+</a> -->
+
+<!-- <button>
+    <a href="#" id="goToTopBtn">
+        <img src="../pic/gototop.png" alt="GO TO TOP">
+    </a>
+</button> -->

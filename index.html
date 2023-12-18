@@ -4,175 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANTE GEMS</title>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/index.css">
-    <script src="JS/common.js"></script>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/media.css">
+    <script src="../JS/jquery-3.7.1.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+    <script src="../JS/loadJS.js"></script>
+    <script src="../JS/media.js"></script>
 </head>
-<body>
+<body id="index">
 <!-- banner -->
-<div class="banner">
-    <a href="">
-        <button class="banner_btn_left">
-            <img src="/pic/banner_btn_left.png" alt="banner_btn_left">
-        </button>
-    </a>
-    <div class="container banner_info">
-        <h1 class="banner_info_slogan">與首席設計師，品茗 話珠寶</h1>
-        <a href="member.html"><button class="circle_btn">
-            <div><img src="/pic/circle_btn_white_dropshadow__circle.png" alt="circle_btn_img" class="circle"></div>
-            <h4>搶先報名</h4>
-        </button></a>
-    </div>
-    <a href="">
-        <button class="banner_btn_right">
-            <img src="/pic/banner_btn_right.png" alt="banner_btn_right">
-        </button>
-    </a>
+<!-- h1 + .textbgc notworking -->
+<div id="sliderBoard">
+    <ul id="banner">
+        <li>
+            <img src="../pic/index-banner1.png"  alt="與首席設計師，品茗 話珠寶" class="image">
+            <div class="container">
+                <div>
+                    <h1 class="textBGC">與首席設計師，品茗 話珠寶</h1>
+                    <a href="mailto: server@plantegems.tw" class="circleBTN pw">
+                        <div></div>
+                        <p></p>
+                        <h4>搶先報名</h4>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../pic/index-banner2.png" alt="冬日珠光璀璨 耶誕獨家獻禮" class="image">
+            <div class="container">
+                <div>
+                    <h1 class="textBGC">冬日珠光璀璨 耶誕獨家獻禮</h1>
+                    <a href="mailto: server@plantegems.tw" class="circleBTN pw">
+                        <div></div>
+                        <p></p>
+                        <h4>預約鑑賞</h4>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../pic/index-banner3.png" alt="愛的光輝 結婚對戒不二之選" class="image">
+            <div class="container">
+                <div>
+                    <h1 class="textBGC">愛的光輝 結婚對戒不二之選</h1>
+                    <a href="mailto: server@plantegems.tw" class="circleBTN pw">
+                        <div></div>
+                        <p></p>
+                        <h4>專人諮詢</h4>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../pic/index-banner4.png" alt="88萬份感謝 尋找第88萬名幸運顧客" class="image">
+            <div class="container">
+                <div>
+                    <h1 class="textBGC">88萬份感謝<br>尋找第88萬名幸運顧客</h1>
+                    <a href="mailto: server@plantegems.tw" class="circleBTN pw">
+                        <div></div>
+                        <p></p>
+                        <h4>領取幸運</h4>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../pic/index-banner5.png" alt="鑽石之光 永恆閃耀 訂婚鑽戒首選" class="image">
+            <div class="container">
+                <div>
+                    <h1 class="textBGC">鑽石之光 永恆閃耀<br>訂婚鑽戒首選</h1>
+                    <a href="mailto: server@plantegems.tw" class="circleBTN pw">
+                        <div></div>
+                        <p></p>
+                        <h4>專人諮詢</h4>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul id="bannerButton">
+    </ul>
 </div>
+<div class="bannerRotate"></div>
 
 <!-- brand story -->
-<a href="about.html">
-<div class="intro_bg">
-    <div class="container intro">
-        <div class="box_warp">
-            <div class="box_enTitle">Brand Story</div>
-            <div class="box_content">
-                <h2 class="name">品牌故事</h2>
-                <div class="box_describe">
-                    <p>我們每個人都是一顆獨特的星球，<br>勇敢征服星辰大海。</p>
-                    <p>就像寶石，經歷溫度、壓力、切割，<br>從礦石轉變為光彩奪目的珠寶。</p>
-                    <p>PLANTE GEMS 的珠寶首飾<br>以生命必經的里程碑為意象，<br>
-                    由專業團隊獨家設計，<br>見證你/妳的珍貴與難得。</p>
-                </div>
+<div id="about" class="box_wrap">
+    <div class="container">
+        <div class="box">
+            <div class="decorTitle">Brand Story</div>
+            <div class="box_bg">
+                <h2>品牌故事</h2>
+                <p>我們每個人都是一顆獨特的星球，<br>勇敢征服星辰大海。</p>
+                <p>就像寶石，經歷溫度、壓力、切割，<br>從礦石轉變為光彩奪目的珠寶。</p>
+                <p>PLANTE GEMS 的珠寶首飾<br>以生命必經的里程碑為意象，<br>由專業團隊獨家設計，<br>見證你/妳的珍貴與難得。</p>
+                <a href=about.html class="moreBTN pink">
+                    <h4>MORE</h4>
+                    <div></div>
+                </a>
             </div>
         </div>
     </div>
 </div>
-</a>
 
 <!-- new collection -->
-<div class="co container">
-    <div class="enTitle">New Collection</div>
-    <div class="co_wrap">
-        <div class="co_words">
-            <h2 class="name">全新系列</h2>
-            <div class="co_new_info">
-                <h4>B612 系列</h4>
-                <div>
-                    <p>衆星圍繞 戒指</p>
-                    <p>唯一珍愛 手鍊</p>
-                    <p>唯一珍愛 項鍊</p>
-                    <p>唯一珍愛 戒指</p>
-                    <p>衆星圍繞 手環</p>
-                </div>
-                <a href="b612.html"><button class="morebtn_pink">
-                    <p>MORE</p>
-                    <div class="morebtn_pink_line"></div>
-                </button></a>
-            </div>
-        </div>
-        <div class="co_pics_l">
-            <div class="co_pics_ltl">
-                <img src="/pic/co_pics_ltl.png" alt="collection_pics.png">
-            </div>
-            <div class="co_pics_ltr">
-                <img src="/pic/co_pics_ltr.png" alt="collection_pics">
-            </div>
-            <div class="co_pics_lbl">
-                <img src="/pic/co_pics_lbl.png" alt="collection_pics">
-            </div>
-            <div class="co_pics_lbr">
-                <img src="/pic/co_pics_lbr.png" alt="collection_pics">
-            </div>
-        </div>
-        <div class="co_pics_r">
-            <img src="/pic/co_pics_r.png" alt="collection_pics">
-        </div>
-
+<div id="b612" class="container">
+    <div class="phoneTitle">
+        <hgroup>
+            <div class="decorTitle">New Collection</div>
+            <h2>最新系列</h2>
+        </hgroup>
+        <a href=about.html class="moreBTN pink">
+            <h4>MORE</h4>
+            <div></div>
+        </a>
     </div>
+    <main>
+        <article>
+            <h4>B612 系列</h4>
+            <div class="diamondring">
+                <p class="textBGC">眾星圍繞 戒指</p>
+            </div>
+            <div class="diamonwristband">
+                <p class="textBGC">眾星圍繞 手環</p>
+            </div>
+            <div class="necklace">
+                <p class="textBGC">唯一珍愛 項鍊</p>
+            </div>
+            <div class="bracelet">
+                <p class="textBGC">唯一珍愛 手鍊</p>
+            </div>
+            <div class="earrings">
+                <p class="textBGC">唯一珍愛 耳環</p>
+            </div>
+            <a href=../collections/b612.html class="moreBTN pink">
+                <h4>MORE</h4>
+                <div></div>
+            </a>
+        </article>
+        <div>
+            <div class="diamondring">
+                <img src="../pic/newco1.jpg" alt="眾星圍繞 戒指 1克拉">
+            </div>
+            <div class="diamonwristband">
+                <img src="../pic/newco2.jpg" alt="眾星圍繞 手環">
+            </div>
+            <div class="necklace">
+                <img src="../pic/newco3.jpg" alt="唯一珍愛 項鍊">
+                <!-- 885*465，手機版要換小圖-->
+            </div>
+            <div class="bracelet">
+                <img src="../pic/newco4.jpg" alt="唯一珍愛 手鍊">
+            </div>
+            <div class="earrings">
+                <img src="../pic/newco5.jpg" alt="唯一珍愛 耳環(下右)">
+            </div>
+        </div>
+    </main>
 </div>
 
-<!-- news -->
-<div class="news">
-    <div class="container">
-        <div class="enTitle">News</div>
-        <h2 class="name">最新消息</h2>
-        <div class="news_wrap">
-            <a href="news.html">
-                <div class="card">
-                    <div class="card_pic">
-                        <img src="/pic/card_pic1.png" alt="news_pic">
-                    </div>
-                    <div class="card_words">
-                        <p># 活動快訊　# 感恩回饋</p>
-                        <h4 class="card_title">2023 聖誕限定優惠 燦爛星光送給摯愛</h4>
-                        <div class="p2">2023.11.28</div>
-                    </div>
-                </div>
-            </a>
-            <a href="news.html">
-                <div class="card">
-                    <div class="card_pic">
-                        <img src="/pic/card_pic2.png" alt="news_pic">
-                    </div>
-                    <div class="card_words">
-                        <p># 活動快訊</p>
-                        <h4 class="card_title">國際巨星美代子擔任PG 首位代言人</h4>
-                        <div class="p2">2023.11.19</div>
-                    </div>
-                </div>
-            </a>
-            <a href="news.html">
-                <div class="card">
-                    <div class="card_pic">
-                        <img src="/pic/card_pic3.png" alt="news_pic">
-                    </div>
-                    <div class="card_words">
-                        <p># 活動快訊</p>
-                        <h4 class="card_title">品味珠寶－與 PG 首席設計師的茶會時光</h4>
-                        <div class="p2">2023.10.16</div>
-                    </div>
-                </div>
-            </a>
-            <a href="news.html">
-                <div class="card">
-                    <div class="card_pic">
-                        <img src="/pic/card_pic4.png" alt="news_pic">
-                    </div>
-                    <div class="card_words">
-                        <p># 專欄文章</p>
-                        <h4 class="card_title">彩鑽：奇彩繽紛的天然寶石之美</h4>
-                        <div class="p2">2023.10.01</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+<!-- news --><!-- 3.自動輪播 -->
+<div id="news" class="container">
+    <div class="phoneTitle">
+        <hgroup>
+            <div class="decorTitle">News</div>
+            <h2>最新消息</h2>
+        </hgroup>
+        <a href=about.html class="moreBTN pink">
+            <h4>MORE</h4>
+            <div></div>
+        </a>
     </div>
+    <main class="carousel">
+        <div class="spotlight">
+            <section>
+                <div>
+                    <img src="pic/news/01.jpg" alt="2023 聖誕季限定優惠 燦爛星光送給摯愛 pic">
+                </div>
+                <article>
+                    <p>2023 聖誕限定優惠 燦爛星光送給摯愛</p>
+                    <time>2023.11.28</time>
+                    <div class=" p3 news_tags">
+                        <div class="events">活動快訊</div>
+                        <div class="feedback">感恩回饋</div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div>
+                    <img src="pic/news/02.jpg" alt="PLANTE GEMS 首位代言人曝光 國際巨星美代子配戴小王子系列出席新品發表會 pic">
+                </div>
+                <article>
+                    <p>國際巨星美代子 代言 PG 小王子系列 </p>
+                    <time>2023.11.19</time>
+                    <div class=" p3 news_tags">
+                        <div class="events">活動快訊</div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div>
+                    <img src="pic/news/03.jpg" alt="品味珠寶－與 PLANTE GEMS 珠寶鑑定師的愉悅茶會時光 pic">
+                </div>
+                <article>
+                    <p>品味珠寶－與 PG 設計師的愉悅茶會時光</p>
+                    <time>2023.10.16</time>
+                    <div class=" p3 news_tags">
+                        <div class="events">活動快訊</div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div>
+                    <img src="pic/news/04.jpg" alt="淺談彩鑽學：欣賞奇彩繽紛的天然寶石之美 pic">
+                </div>
+                <article>
+                    <p>淺談彩鑽學：欣賞天然寶石之美</p>
+                    <time>2023.10.01</time>
+                    <div class=" p3 news_tags">
+                        <div class="article">專欄文章</div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div>
+                    <img src="pic/news/05.jpg" alt="PLANTE GEMS 中壢分店盛大開幕 入店即贈開幕紀念禮 pic">
+                </div>
+                <article>
+                    <p>PG 中壢店盛大開幕 限量紀念禮入店即贈</p>
+                    <time>2023.09.01</time>
+                    <div class=" p3 news_tags">
+                        <div class="events">活動快訊</div>
+                        <div class="feedback">感恩回饋</div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
 </div>
 
 <!-- contact -->
-<div class="contact_bg">
-    <div class="contact container">
-        <div class="box_warp">
-            <div class="box_enTitle">Contact</div>
-            <div class="box">
-                <div class="box_content">
-                    <h2 class="name">聯絡我們</h2>
-                    <div class="box_describe">
-                        <p>歡迎預約珠寶鑑賞服務，<br>或向我們反應您的問題與建議，<br>PLANTE GEMS 為您提供專業的協助。</p>
-                        <p>期待與您分享 PLANTE GEMS 的精彩，<br>打造獨屬於您的珠寶時刻。</p>
-                    </div>
-                    <a href="shop.html"><button class="circle_btn_purple">
-                        <div>
-                            <img src="/pic/circle_btn_purple_dropshadow__circle.png" alt="circle_btn_img" class="circle_purple">
-                        </div>
-                        <h4>立即聯絡</h4>
-                    </button></a>
-                </div>
+<div id="contact" class="box_wrap">
+    <div class="container">
+        <div class="box">
+            <div class="decorTitle">Contact</div>
+            <div class="box_bg">
+                <h2>聯絡我們</h2>
+                <p>歡迎預約珠寶鑑賞服務，<br>或向我們反應您的問題與建議，<br>PLANTE GEMS 為您提供專業的協助。</p>
+                <p>期待與您分享 PLANTE GEMS 的精彩，<br>打造獨屬於您的珠寶時刻。</p>
+                <a href="mailto: server@plantegems.tw" class="circleBTN dpp">
+                    <div></div>
+                    <p></p>
+                    <h4>立即聯絡</h4>
+                </a>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
