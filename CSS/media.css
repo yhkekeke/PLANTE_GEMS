@@ -98,7 +98,7 @@
             width: max-content;
         }
         .logo>img{
-            width: 50%;
+            /* width: 50%; */
             transform: translate(0,0);
         }
         div.burger{
