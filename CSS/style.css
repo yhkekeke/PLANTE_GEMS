@@ -1661,3 +1661,514 @@ footer dl a:hover{
 .block{ display: block; }
 .opacity0{ opacity: 0; }
 .opacity1{ opacity: 1; }
+
+
+@media screen and (max-width: 768px){
+    .decorTitle{
+        font-size: 28px;
+        line-height: auto;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+        line-height: auto;   
+    }
+    h3, h4{
+        font-size: 16px;
+        line-height: auto;
+        letter-spacing: 4%;
+    }
+    p, #shop section, #collections ul, #news li, #header dd a, header .search input::placeholder,footer dl{
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 8%;   
+    }
+    .p2, div.path, #news p{
+        font-size: 10px;
+        line-height: auto;   
+    }
+    .p3{
+        font-size: 8px;
+        line-height: 16px;   
+        letter-spacing: 4%;
+    }
+    .container{
+        /* margin: 0 10vw; */
+        max-width: 90vw;
+    }
+    div.path{
+        display: none;
+    }
+    hgroup{
+        text-align: center;
+        margin-top: 100px;
+    }
+    #shop hgroup .decorTitle{
+        color: var(--Clpp);
+    }
+    main{
+        margin: 32px auto 56px;
+        gap: 40px;
+    }
+    body:not(.news_bg) section{
+        display: block;
+    }
+    [class*="decor"]{
+        /* width: max-content; */
+    }
+    [class*="decor"] img{
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    /* circleBTN */
+    .circleBTN.dpp div{
+        background-image: url(../pic/circleBTN_dpp_C_md.png);
+        background-position: center;
+    }
+    .circleBTN.pw div{
+        background-image: url(../pic/circleBTN_pw_C_md.png);
+        background-position: center;
+    }
+    /* clickedBTN */
+    .circleBTN.dpp div.clickedCBTN{
+        background-image: url(../pic/circleBTN_pw_C_md.png);
+        opacity: 1;
+        animation: rotate 4s forwards ease infinite;
+    }
+    .circleBTN.pw div.clickedCBTN{
+        background-image: url(../pic/circleBTN_dpp_C_md.png);
+        opacity: 1;
+        animation: rotate 4s forwards ease infinite;
+    }
+
+    /* moreBTN */
+    .moreBTN p+div{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        top: 0;
+        padding: 16px;
+        border: var(--Copacity);
+
+        .logo{
+            width: max-content;
+        }
+        .logo>img{
+            /* width: 50%; */
+            transform: translate(0,0);
+        }
+        div.burger{
+            margin: auto 0;
+            display: block;
+        }
+        nav{
+            display: none;
+        }
+        div.icon{
+            display: none;
+        }
+    }
+    #footer{
+        main{ /* main block */
+            display: block;
+        }
+        main>div{
+            margin: 0 auto;
+            width: max-content;
+        }
+        .icon{
+            margin: 20px auto 40px;
+        }
+        dl:not(:last-of-type), dt{
+            display: none;
+        }
+        dl{
+            width: max-content;
+            margin: 0 auto;
+        }
+        dd+dd{
+            margin-top: 16px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+#index{
+
+    #sliderBoard{
+        img{
+            object-fit: cover;
+            object-position: 23%;
+        }
+        .container{
+            left: 0;
+            top: 30vh;
+        }
+        .container>div{
+            width: 100%;
+            justify-content: stretch;
+            margin: 0 0 0 auto;
+        }
+        h1{
+            width: 100%;
+            text-align: right;
+        }
+        #bannerButton{
+            text-align: right;
+            right: 10vw;
+        }
+    }
+    #sliderBoard::before{
+        margin-top: 10vh;
+        height: 100vh;
+    }
+    .bannerRotate::before{
+        bottom: 10vh;
+        left: -40vw;
+    }
+    #b612{
+        .decorTitle ,h2{
+            /* text-align: center; */
+        }
+        div>a{
+            display: block;
+        }
+        main{/* main block */
+            display: block;
+        }
+        main>div{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 18% 25% 18%;
+            margin-bottom: -510px;
+        }
+        main img{
+            width: 100%;
+            border-radius: 12px;
+        }
+        main>div>.necklace{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .necklace>img{
+            object-fit: cover;
+            object-position: 0% 12%;
+        }
+        article{
+            margin: 0 auto;
+            display: none;
+        }
+    }
+    #news{
+        main{
+            gap: 32px;
+        }
+        section:nth-of-type(n+4){
+            display: none;
+        }
+        .spotlight{
+            gap: 32px;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+#about{
+    margin-top: 100px;
+    background-position: 40% 100%;
+    background-size: auto 65vh;
+}
+#about::after{
+    height: 92vh;
+}
+#gurantee{
+    img{
+        width: 60%;
+    }
+    section>div{
+        margin-top: 32px;
+    }
+    article>div{
+        display: block;
+    }
+    figure{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+
+        img{
+            width: 60%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        figcaption{
+            text-align-last: left;
+            margin: auto auto auto 0;
+        }
+    }
+    figure:nth-of-type(1) img{
+        object-position: 0% 35%;
+    }
+    figure:nth-of-type(2) img{
+        object-position: 0% 0%;
+    }
+    figure:nth-of-type(3) img{
+        object-position: 0% 15%;
+    }
+    figure+figure{
+        margin-top: 16px;
+    }
+}
+
+#shop{
+    section{
+        
+    }
+    article{
+        margin: 0 auto;
+    }
+    iframe{
+        max-width: 80vw;
+        max-height: 80vw;
+    }
+    article>div{
+        margin-left: 40px;
+    }
+    article+iframe{
+        margin-top: 32px;
+    }
+    .decorBot, main>a{
+        display: block;
+    }    
+    .moreBTN{
+        margin: 0 auto;
+    }
+}
+.shop_bg{
+    height: 200vh;
+}
+#contact, #index #contact{
+    /* 可換小圖 */
+        transform: scaleX(-1);
+        background-size: auto 55vh;
+        background-position: 70% 100%;
+        margin: 0 0 88px auto;
+
+        .container {
+            transform: scaleX(-1);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+#collections{
+    section>div{
+        width: 80%;
+        margin: 0 auto 16px;
+    }
+    section img{
+        max-width: 80vw;
+    }
+    article{
+        margin:0 auto;
+        width: max-content;
+    }
+    .moreBTN{
+        margin: 16px auto 0;
+    }
+}
+#b612{
+    margin-top: 100px;
+
+    .box{
+        display: block;
+    
+        div:first-of-type{
+            width: 60vw;
+            height: 60vw;
+            position: static;
+            display: block;
+        }
+        img{
+            position: static;
+            transform: translate(-48%, -30%) scale(0.5);
+            animation: moveToRight2 3.5s ease-out forwards; 
+        }
+        div:last-of-type {
+            margin-top: 10vh;
+        }
+    }
+    .box::before{
+        width: 60vw;
+        height: 60vw;
+        top: 20VW;
+        right: 10VW;
+        background-image: linear-gradient(to bottom, 
+        var(--Cco1) 0%,
+        var(--Cco2) 70%,
+        var(--Cco3) 100%);
+    }
+
+    main{
+        display: block;
+
+        img{
+            width: 100%;
+        }
+        h4, div>p, .p2{
+            text-align: center;
+        }
+    }
+    blockquote{
+        .pc{ display: none; }
+        .phone{ display: block; }
+        h4{
+            word-spacing: normal;
+            width: 70vw;
+        }
+    }
+    article{
+        margin: 0 auto;
+    }
+    article.part2, article p{
+        width: 100%;
+    }
+    section{
+        position: static;
+    }
+    section>div{
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        transform: scale(1);
+    }
+    section.oneItem>div{
+        width: 50vw;
+        aspect-ratio: 1;
+    }
+    .oneItem h4{
+        margin: 32px auto 0;
+    }
+    section>article{
+        padding: 0 8vw;
+        width: 60vw;
+    }
+
+    section+section{
+        margin-top: 10vh;
+    }
+    article.part2{
+        width: 50vw;
+    }
+    section.part2{
+        display: block;
+        margin-top: 10vh;
+    }
+    section.part2 article{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+        margin: 32px auto 10vh;
+    }
+    section.part2 article>div+div{
+        margin-top: 0;
+    }
+    section>div div{
+        position: static;
+        width: 100%;
+        display: block;
+    }
+    section.part2>div>div:last-of-type{
+        /* display: block; */
+    }
+    .necklace img.textApic {
+        /* transform: none; */
+        /* transform: translate(10%, 10%) scale(1.2); */
+    }
+    .necklace img.textApic {
+        /* transform: none; */
+        /* transform: translate(6%, -15%) scale(1.35); */
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+.news_bg #news{
+    main{
+        display: block;
+    }
+}
+#news aside{
+    z-index: 999;
+    top: 10vh;
+    width: 100%;
+    display: flex;
+}
+aside ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    margin: 0 auto;
+}
+aside li{
+    margin-top: 0;
+}
+#news main>div{
+    margin-top: 16px;
+}
+#news section>div{
+    width: max-content;
+    margin: auto 0 0;
+    img{
+        width: 30vw;
+    }
+}
+#news h4{
+    line-height: 30px;
+}
+#news .news_tags p{
+    padding: 0 8px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.faq_bg .container{
+    /* max-width: 95vw; */
+}
+#faq{
+    nav{
+        margin-right: 8px;
+        justify-content: space-evenly;
+        gap: 0;
+        p{
+            width: 18vw;
+            line-height: 40px;
+        }
+    }
+    ul{
+        overflow-y: auto;
+        max-height: 85vh;
+        padding: 8px 16px 40px;
+    }
+    .circleBTN div{
+        width: 24px;
+        height: 24px;
+    }
+    .circleBTN p{
+        background-size: contain;
+        width: 8px;
+        height: 8px;
+        right: 15px;
+    }
+    .circleBTN>p.down{
+        transform: rotateZ(90deg) translate(0, 1px);
+}
+}
+}
