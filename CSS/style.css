@@ -1476,10 +1476,10 @@ header{
     margin: auto;
     width: 88vw;
     height: 4.3vw;
-    display:flex;
+    color: var(--Cpw);
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: var(--Cpw);
 
     border-radius: 55px;
     border: 0.5px solid var(--Cwhite);
@@ -1503,8 +1503,13 @@ header nav{
     margin: 1.3vw 0;
 }
 header .burger{
-    display: none;
     cursor: pointer;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header .burger>iconify-icon{
+    display: none;
 }
 header .icon, footer .icon{
     display: flex;

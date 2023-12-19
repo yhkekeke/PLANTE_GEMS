@@ -441,12 +441,12 @@
   .faq_bg .container {
     /* max-width: 95vw; */
   }
-  #faq nav {
+  #faq main nav {
     margin-right: 8px;
     justify-content: space-evenly;
     gap: 0;
   }
-  #faq nav p {
+  #faq main nav p {
     width: 18vw;
     line-height: 40px;
   }

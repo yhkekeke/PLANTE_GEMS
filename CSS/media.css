@@ -127,6 +127,7 @@
 }
 @media screen and (max-width: 768px){
     header{
+        height: 76px;
         top: 0;
         padding: 16px;
         border: var(--Copacity);
@@ -138,14 +139,15 @@
             height: 10vw;
             transform: translate(0,0);
         }
-        div.burger{
+        .burger{
             margin: auto 0;
             display: block;
         }
-        nav{
-            display: none;
+        .burger>iconify-icon{
+            margin: auto 0;
+            display: block;
         }
-        div.icon{
+        nav, div.icon{
             display: none;
         }
     }
@@ -233,10 +235,12 @@ body:not(#index) #about::after{
     }
 }
 
+#shop,#collections,#news{
+    margin-top: 10vh ;
+}
+
 #shop{
-    section{
-        
-    }
+
     article{
         margin: 0 auto;
     }
