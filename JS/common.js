@@ -30,9 +30,7 @@ function isInVP(element) {
 }
 /** footer header 2show1 */
 $(document).scroll(function(){
-    // console.log('抓到scroll');
     if(isInVP($("#footer"))){
-        console.log('看到footer了');
         $("div#header").addClass("none");
     }else{
         $("div#header").removeClass("none");
