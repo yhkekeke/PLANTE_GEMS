@@ -127,6 +127,7 @@
 }
 @media screen and (max-width: 768px){
     header{
+        height: 10vh;
         top: 0;
         padding: 16px;
         border: var(--Copacity);
@@ -135,17 +136,18 @@
             width: max-content;
         }
         .logo>img{
-            height: 10vw;
+            height: 10vh;
             transform: translate(0,0);
         }
-        div.burger{
+        .burger{
             margin: auto 0;
             display: block;
         }
-        nav{
-            display: none;
+        .burger>iconify-icon{
+            margin: auto 0;
+            display: block;
         }
-        div.icon{
+        nav, div.icon{
             display: none;
         }
     }
@@ -233,10 +235,12 @@ body:not(#index) #about::after{
     }
 }
 
+#shop, #collections, #news, #faq{
+    margin-top: 15vh;
+}
+
 #shop{
-    section{
-        
-    }
+
     article{
         margin: 0 auto;
     }
@@ -715,6 +719,18 @@ body:not(#index) #about::after{
     }
     section img{
         width: 90vw;
+    }
+    }
+#faq{
+    nav{
+        margin: 0;
+    }
+    nav p{
+        line-height: 20px;
+        padding: 6px 4px;
+    }
+    nav br{
+        display: block;
     }
     }
 }

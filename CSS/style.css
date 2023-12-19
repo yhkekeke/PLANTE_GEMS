@@ -942,7 +942,9 @@ aside li, #faq nav>p{
     color: var(--Cdg);
     text-align: center;
 }
-
+#faq nav br{
+    display: none;
+}
 #news .circleBTN div{
     opacity: 0;
 }

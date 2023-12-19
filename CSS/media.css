@@ -127,7 +127,7 @@
 }
 @media screen and (max-width: 768px){
     header{
-        height: 76px;
+        height: 10vh;
         top: 0;
         padding: 16px;
         border: var(--Copacity);
@@ -136,7 +136,7 @@
             width: max-content;
         }
         .logo>img{
-            height: 10vw;
+            height: 10vh;
             transform: translate(0,0);
         }
         .burger{
@@ -235,8 +235,8 @@ body:not(#index) #about::after{
     }
 }
 
-#shop,#collections,#news{
-    margin-top: 10vh ;
+#shop, #collections, #news, #faq{
+    margin-top: 15vh;
 }
 
 #shop{
@@ -719,6 +719,18 @@ body:not(#index) #about::after{
     }
     section img{
         width: 90vw;
+    }
+    }
+#faq{
+    nav{
+        margin: 0;
+    }
+    nav p{
+        line-height: 20px;
+        padding: 6px 4px;
+    }
+    nav br{
+        display: block;
     }
     }
 }

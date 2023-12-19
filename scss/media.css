@@ -14,11 +14,6 @@
     font-size: 20px;
     line-height: auto;
   }
-  header .search input::-moz-placeholder {
-    font-size: 18px;
-    line-height: auto;
-    letter-spacing: 4%;
-  }
   h3, h4, p, #shop section, #collections ul, #news li, #header dd a, header .search input::placeholder {
     font-size: 18px;
     line-height: auto;
@@ -130,26 +125,27 @@
 }
 @media screen and (max-width: 768px) {
   header {
+    height: 10vh;
     top: 0;
     padding: 16px;
     border: var(--Copacity);
   }
   header .logo {
-    width: -moz-max-content;
     width: max-content;
   }
   header .logo > img {
-    height: 10vw;
+    height: 10vh;
     transform: translate(0, 0);
   }
-  header div.burger {
+  header .burger {
     margin: auto 0;
     display: block;
   }
-  header nav {
-    display: none;
+  header .burger > iconify-icon {
+    margin: auto 0;
+    display: block;
   }
-  header div.icon {
+  header nav, header div.icon {
     display: none;
   }
   #footer main { /* main block */
@@ -157,7 +153,6 @@
   }
   #footer main > div {
     margin: 0 auto;
-    width: -moz-max-content;
     width: max-content;
   }
   #footer footer main img {
@@ -170,7 +165,6 @@
     display: none;
   }
   #footer dl {
-    width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
   }
@@ -209,8 +203,7 @@
   #gurantee figure img {
     width: 30vw;
     aspect-ratio: 1;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 12px;
     overflow: hidden;
   }
@@ -219,19 +212,19 @@
     margin: auto auto auto 0;
   }
   #gurantee figure:nth-of-type(1) img {
-    -o-object-position: 0% 35%;
-       object-position: 0% 35%;
+    object-position: 0% 35%;
   }
   #gurantee figure:nth-of-type(2) img {
-    -o-object-position: 0% 0%;
-       object-position: 0% 0%;
+    object-position: 0% 0%;
   }
   #gurantee figure:nth-of-type(3) img {
-    -o-object-position: 0% 15%;
-       object-position: 0% 15%;
+    object-position: 0% 15%;
   }
   #gurantee figure + figure {
     margin-top: 16px;
+  }
+  #shop, #collections, #news, #faq {
+    margin-top: 15vh;
   }
   #shop article {
     margin: 0 auto;
@@ -273,7 +266,6 @@
   }
   #collections article {
     margin: 0 auto;
-    width: -moz-max-content;
     width: max-content;
   }
   #collections .moreBTN {
@@ -419,7 +411,6 @@
     margin: 16px auto 0;
   }
   #news section > div {
-    width: -moz-max-content;
     width: max-content;
     margin: auto 0 0;
     /* img{
@@ -441,12 +432,12 @@
   .faq_bg .container {
     /* max-width: 95vw; */
   }
-  #faq main nav {
+  #faq nav {
     margin-right: 8px;
     justify-content: space-evenly;
     gap: 0;
   }
-  #faq main nav p {
+  #faq nav p {
     width: 18vw;
     line-height: 40px;
   }
@@ -483,10 +474,8 @@
     height: 100vh;
   }
   #sliderBoard img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 23%;
-       object-position: 23%;
+    object-fit: cover;
+    object-position: 23%;
   }
   #sliderBoard .container {
     right: auto;
@@ -526,10 +515,8 @@
     grid-row: span 1;
   }
   #index #b612 .necklace > img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 0% 12%;
-       object-position: 0% 12%;
+    object-fit: cover;
+    object-position: 0% 12%;
   }
   #index #b612 article {
     margin: 0 auto;
@@ -570,8 +557,7 @@
     height: 0;
   }
   #sliderBoard img {
-    -o-object-position: 29%;
-       object-position: 29%;
+    object-position: 29%;
   }
   #b612 article p br {
     display: none;
@@ -612,8 +598,7 @@
     line-height: 2;
   }
   #sliderBoard img {
-    -o-object-position: 30%;
-       object-position: 30%;
+    object-position: 30%;
   }
   #bannerButton li {
     width: 10vw;
@@ -634,7 +619,6 @@
     width: 70vw;
   }
   #index #news .news_tags {
-    width: -moz-max-content;
     width: max-content;
     margin-top: 1vw 0 0;
     height: 140px;
@@ -671,6 +655,16 @@
   #news section img {
     width: 90vw;
   }
+  #faq nav {
+    margin: 0;
+  }
+  #faq nav p {
+    line-height: 20px;
+    padding: 6px 4px;
+  }
+  #faq nav br {
+    display: block;
+  }
 }
 @media screen and (max-width: 360px) {
   #about .box > .box_bg {
@@ -698,4 +692,6 @@
 @media screen and (max-width: 1199.98px) { ... }
 
 // X-Large devices (large desktops, less than 1400px)
-@media screen and (max-width: 1399.98px) { ... } *//*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 1399.98px) { ... } */
+
+/*# sourceMappingURL=media.css.map */
