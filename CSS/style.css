@@ -612,7 +612,7 @@ body:not(#index) #about::after, #sliderBoard::before{
     top: 520px;
     right: 0;
     width: 85.4166666%;
-    height: 2300px;
+    height: 1700px;
     border-radius: 500px 0 0 0;
     background-image: linear-gradient(to bottom, rgb(233,203,211,0.05) 0%, rgb(180,95,120,1) 100%);
 }
@@ -846,6 +846,9 @@ body:not(#index) #b612 section:not(.part2)>div{
 }
 #b612 .necklace br, #b612 .bracelet br, #b612 .earrings br{
     display: none;
+}
+#b612 .necklace .p2 br, #b612 .bracelet .p2 br, #b612 .earrings .p2 br{
+    display: block;
 }
 #b612 blockquote:last-of-type div.decorBot img{
     margin-right: 0;

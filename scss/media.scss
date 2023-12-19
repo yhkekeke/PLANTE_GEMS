@@ -1,11 +1,10 @@
-
 /* X-Smscreen devices (portrait phones, less than 576px) */
 /* @media screen and (max-width: 575.98px) { ... } */
 
 /* Smscreen devices (landscape phones, less than 768px) */
 @media screen and (max-width: 768px){
     .decorTitle{
-        font-size: 28px;
+        font-size: 32px;
         line-height: auto;
     }
     h1{
@@ -15,22 +14,25 @@
         font-size: 20px;
         line-height: auto;   
     }
-    h3, h4{
-        font-size: 16px;
+    h3, h4, p, #shop section, #collections ul, #news li, #header dd a, header .search input::placeholder{
+        font-size: 18px;
         line-height: auto;
         letter-spacing: 4%;
     }
-    p, #shop section, #collections ul, #news li, #header dd a, header .search input::placeholder,footer dl{
-        font-size: 12px;
+    /* {
+        font-size: 16px;
         line-height: 20px;
         letter-spacing: 8%;   
-    }
-    .p2, div.path, #news p{
-        font-size: 10px;
+    } */
+    .p2, div.path, #news p, footer dl{
+        font-size: 16px;
         line-height: auto;   
     }
-    .p3{
-        font-size: 8px;
+    footer dl{
+        text-indent: -1.5em;
+    }
+    .p3, time{
+        font-size: 14px;
         line-height: 16px;   
         letter-spacing: 4%;
     }
@@ -52,6 +54,15 @@
         margin: 32px auto 56px;
         gap: 40px;
     }
+    .box>.box_bg{
+        padding: 4vw 5vw 7vw;
+    }
+    .box>.box_bg>h2, .box p+p{
+        margin-top: 3vw;
+    }
+    .box>.box_bg>h2{
+        margin-bottom: 4vw;
+    }
     body:not(.news_bg) section{
         display: block;
     }
@@ -61,6 +72,10 @@
     [class*="decor"] img{
         width: 70vw;
         margin: 0 auto;
+    }
+    iconify-icon>svg{
+        width: 30px;
+        height: 30px;
     }
 
     /* circleBTN */
@@ -100,6 +115,15 @@
     .moreBTN p+div{
         margin: 0;
     }
+    .moreBTN{
+        width: 60px;
+    }
+    .moreBTN h4{
+        margin-bottom: -10px;
+    }
+    .moreBTN::before, #index #news>div .moreBTN::before{
+        transform: translate(-6px, 32px);
+    }
 }
 @media screen and (max-width: 768px){
     header{
@@ -133,6 +157,9 @@
             margin: 0 auto;
             width: max-content;
         }
+        footer main img{
+            height: auto;
+        }
         .icon{
             margin: 20px auto 40px;
         }
@@ -146,96 +173,24 @@
         dd+dd{
             margin-top: 16px;
         }
-    }
-}
-@media screen and (max-width: 768px) {
-#index{
 
-    #sliderBoard{
-        img{
-            object-fit: cover;
-            object-position: 23%;
-        }
-        .container{
-            left: 0;
-            top: 30vh;
-        }
-        .container>div{
-            width: 100%;
-            justify-content: stretch;
-            margin: 0 0 0 auto;
-        }
-        h1{
-            width: 100%;
-            text-align: right;
-        }
-        #bannerButton{
-            text-align: right;
-            right: 10vw;
-        }
     }
-    #sliderBoard::before{
-        margin-top: 10vh;
-        height: 100vh;
-    }
-    .bannerRotate::before{
-        bottom: 10vh;
-        left: -40vw;
-    }
-    #b612{
-        .decorTitle ,h2{
-            /* text-align: center; */
-        }
-        div>a{
-            display: block;
-        }
-        main{/* main block */
-            display: block;
-        }
-        main>div{
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 18% 25% 18%;
-            margin-bottom: -510px;
-        }
-        main img{
-            width: 100%;
-            border-radius: 12px;
-        }
-        main>div>.necklace{
-            grid-column: span 2;
-            grid-row: span 1;
-        }
-        .necklace>img{
-            object-fit: cover;
-            object-position: 0% 12%;
-        }
-        article{
-            margin: 0 auto;
-            display: none;
-        }
-    }
-    #news{
-        main{
-            gap: 32px;
-        }
-        section:nth-of-type(n+4){
-            display: none;
-        }
-        .spotlight{
-            gap: 32px;
-        }
-    }
-}
 }
 
 @media screen and (max-width: 768px) {
 #about{
     margin-top: 100px;
-    background-position: 40% 100%;
-    background-size: auto 65vh;
+    background-position: 50%;
+    background-size: cover;
+    /* background-position: 40% 100%; */
+
+    .box{
+        margin: 0 0 0 auto;
+    }
 }
-#about::after{
-    height: 92vh;
+body:not(#index) #about::after{
+    height: 80vw;
+    top: 15vh;
 }
 #gurantee{
     img{
@@ -253,14 +208,14 @@
         gap: 16px;
 
         img{
-            width: 60%;
+            width: 30vw;
             aspect-ratio: 1;
             object-fit: cover;
             border-radius: 12px;
             overflow: hidden;
         }
         figcaption{
-            text-align-last: left;
+            text-align: left;
             margin: auto auto auto 0;
         }
     }
@@ -288,12 +243,13 @@
     iframe{
         max-width: 80vw;
         max-height: 80vw;
+        margin: 4vw 4vw 0;
     }
     article>div{
         margin-left: 40px;
     }
     article+iframe{
-        margin-top: 32px;
+        
     }
     .decorBot, main>a{
         display: block;
@@ -307,15 +263,13 @@
 }
 #contact, #index #contact{
     /* 可換小圖 */
-        transform: scaleX(-1);
-        background-size: auto 55vh;
-        background-position: 70% 100%;
+        background-size: cover;
+        background-position: 60% 100%;
         margin: 0 0 88px auto;
-
-        .container {
-            transform: scaleX(-1);
-        }
-    }
+}
+#index .box_wrap>.container>.box{
+    margin: 64px 0 0 auto;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -332,7 +286,7 @@
         width: max-content;
     }
     .moreBTN{
-        margin: 16px auto 0;
+        margin: 16px 0 0 auto;
     }
 }
 #b612{
@@ -376,6 +330,12 @@
         h4, div>p, .p2{
             text-align: center;
         }
+        div>p{
+            height: 72px;
+        }
+        .p2{
+            margin: auto 0 0;
+        }
     }
     blockquote{
         .pc{ display: none; }
@@ -383,10 +343,14 @@
         h4{
             word-spacing: normal;
             width: 70vw;
+            margin: 0 auto;
         }
     }
     article{
         margin: 0 auto;
+    }
+    article.part2>div{
+        height: 100%;
     }
     article.part2, article p{
         width: 100%;
@@ -412,12 +376,11 @@
         padding: 0 8vw;
         width: 60vw;
     }
-
     section+section{
         margin-top: 10vh;
     }
     article.part2{
-        width: 50vw;
+        width: 70vw;
     }
     section.part2{
         display: block;
@@ -427,7 +390,9 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 16px;
-        margin: 32px auto 10vh;
+        margin: 32px 0 10vh;
+        width: 100%;
+        padding: 0;
     }
     section.part2 article>div+div{
         margin-top: 0;
@@ -440,19 +405,14 @@
     section.part2>div>div:last-of-type{
         /* display: block; */
     }
-    .necklace img.textApic {
-        /* transform: none; */
-        /* transform: translate(10%, 10%) scale(1.2); */
-    }
-    .necklace img.textApic {
-        /* transform: none; */
-        /* transform: translate(6%, -15%) scale(1.35); */
-    }
+
+
 }
 }
 
 @media screen and (max-width: 768px) {
 .news_bg #news{
+    width: 90vw;
     main{
         display: block;
     }
@@ -471,22 +431,27 @@ aside ul{
 }
 aside li{
     margin-top: 0;
+    height: 40px;
 }
 #news main>div{
-    margin-top: 16px;
+    margin: 16px auto 0;
 }
 #news section>div{
     width: max-content;
     margin: auto 0 0;
-    img{
+    /* img{
         width: 30vw;
-    }
+    } */
 }
 #news h4{
     line-height: 30px;
 }
 #news .news_tags p{
     padding: 0 8px;
+}
+aside ul{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 }
 
@@ -509,11 +474,274 @@ aside li{
         max-height: 85vh;
         padding: 8px 16px 40px;
     }
+    .faq_q h2{
+        font-size: 28px;
+        margin:0 0 auto ;
+    }
 }
 }
 
+/* index頁 */
 @media screen and (max-width: 768px) {
+#bannerButton{
+    text-align: right;
+    right: 0;
+    margin-right: 10vw;
+    left: auto;
 }
+#bannerButton li{
+    width: 6vw;
+}
+#bannerButton li+li{
+    margin-left: 3vw;
+}
+.bannerRotate::before{
+    bottom: 10vh;
+    left: -40vw;
+}
+#sliderBoard::before{
+    margin-top: 10vh;
+    height: 100vh;
+}
+#sliderBoard{
+    img{
+        object-fit: cover;
+        object-position: 23%;
+    }
+    .container{
+        right: auto;
+        top: 30vh;
+    }
+    .container>div{
+        width: 100%;
+        justify-content: stretch;
+        margin: 0;
+        gap: 2vh;
+    }
+    h1{
+        width: 100%;
+        text-align: right;
+    }
+}
+#index{
+    #about{
+        background-size: auto 90vh;
+    }
+    #b612{
+        div>a{
+            display: block;
+        }
+        main{/* main block */
+            display: block;
+        }
+        main>div{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 18% 25% 18%;
+            margin-bottom: -510px;
+        }
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+        main>div>.necklace{
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .necklace>img{
+            object-fit: cover;
+            object-position: 0% 12%;
+        }
+        article{
+            margin: 0 auto;
+            display: none;
+        }
+    }
+    #news{
+        margin-bottom: 10vh;
+        hgroup{
+            margin-top: 0;
+        }
+        main{
+            gap: 32px;
+        }
+        .spotlight{
+            gap: 32px;
+        }
+        section:nth-of-type(n+4){
+            display: none;
+        }
+        section img{
+            width: 40vw;
+        }
+        article{
+            padding: 1vh;
+            height: 150px;
+        }
+        div.news_tags{
+            /* margin: 0; */
+            align-items: center;
+        }
+
+    }
+}
+}
+
+
+@media screen and (max-width: 560px) {
+hgroup{
+    margin-top: 5vh;
+}
+body:not(#index) #about::after{
+    height: 0;
+}
+#sliderBoard img{
+    object-position: 29%;
+}
+#b612{
+    article p br{
+        display: none;
+    }
+}
+#news{
+    article{
+        padding-right: 2vw;
+    }
+    section img{
+        width: 40vw;
+    }
+    
+}
+#faq{
+    .faq_q h2{
+        
+    }
+}
+#index{
+    #about{
+        background-position: center;
+    }
+    #news{
+        margin-top: 20vh;
+        div.news_tags {
+            line-height: 20px;
+        }
+        section>div{
+            width: auto;
+        }
+        section img{
+            width: 60vw;
+        }
+    }
+
+}
+}
+
+
+@media screen and (max-width: 490px) {
+    .box>.box_bg{
+        padding: 4vw 6vw 7vw;
+    }
+    .box>.box_bg>h2, .box p+p{
+        margin-top: 4vw;
+    }
+    .box>.box_bg>h2{
+        margin-bottom: 4vw;
+    }
+    .p3{
+        line-height: 2;
+    }
+    #sliderBoard img{
+        object-position: 30%;
+    }
+    #bannerButton li{
+        width: 10vw;
+    }
+    #bannerButton li+li{
+        margin-right: 0.5vw;
+    }
+    #index{
+        #about{
+            /* margin-top: -110vh; */
+
+            .container {
+                margin-top: 20vh;
+            }
+        }
+        #news{
+            margin-top: 30vh;
+
+            section img{
+                width: 70vw;
+            }
+            .news_tags{
+            width: max-content;
+            margin-top: 1vw 0 0;
+            height: 140px;
+            }
+        }
+    }
+    footer br{
+        display: block;
+    }
+    #gurantee figure img{
+        margin: 0 0 0 auto;
+    }
+    #gurantee figure{
+        gap: 24px;
+    }
+    #gurantee p:not(.p2){
+        line-height: 20px;
+    }
+    #gurantee .p2 br{
+        display: block;
+    }
+    #b612 .necklace br, #b612 .bracelet br, #b612 .earrings br{
+        display: block;
+    }
+    #b612{
+        article .p2 br{
+            display: none;
+        }
+        main section.part2 div>p{
+            height: 120px;
+        }
+    }
+#news{
+    section{
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 32px;
+    }
+    section img{
+        width: 90vw;
+    }
+    }
+}
+
+@media screen and (max-width: 360px) {
+#about{
+    .box>.box_bg{
+        padding: 4vw 1.5vw 7vw;
+    }
+}
+#index{
+    #about{
+        background-position: 40% 50%;
+    }
+    #news{
+        margin-top: 95vw;
+    }
+}
+#b612{
+    max-width: 100%;
+    section.part2 article{
+        margin-right: -5vw ;
+        margin-left: 0vw ;
+    }
+}
+}
+/* 320/480/768/1024 */
 /* // Medium devices (tablets, less than 992px)
 @media screen and (max-width: 991.98px) { ... }
 
