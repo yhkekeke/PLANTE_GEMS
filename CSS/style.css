@@ -42,6 +42,13 @@ body{
     text-align: justify;
     cursor: url(../pic/cursor.png), default;
 }
+*::selection {
+    background: var(--Cdpp);
+    color: #fff;
+}
+*::-moz-selection { /* for Firefox */
+    background: var(--Cdpp);
+    color: #fff;
 }
 .container{
     max-width: 1200px;
