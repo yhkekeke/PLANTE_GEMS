@@ -40,6 +40,8 @@
 body{
     background-color: var(--Cpw);
     text-align: justify;
+    cursor: url(../pic/cursor.png), default;
+}
 }
 .container{
     max-width: 1200px;
