@@ -1417,10 +1417,14 @@ section.oneItem:hover .textBGC,
 #index #news .spotlight{
     height: auto;
     margin: auto 0;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     gap: 54px;
+    padding-bottom: 5px;
     /* justify-content: space-evenly; */
+}
+#index #news .spotlight::-webkit-scrollbar{
+    display: none;
 }
 #index #news section{
     height: max-content;
