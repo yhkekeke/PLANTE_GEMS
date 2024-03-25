@@ -100,7 +100,6 @@ p, #shop section, #collections ul, #news li{
     font: 300 14px/171.428571% var(--Fp);
 }
 
-
 /* path */
 div.path{
     color: var(--Cdg);
@@ -125,6 +124,7 @@ iconify-icon{
     display: block;
     margin: auto 0;
 }
+
 /* box*/
 .box_wrap>.container{
     width: 100%;
@@ -205,6 +205,23 @@ iconify-icon{
 
 
 
+::-webkit-scrollbar { /* 網頁捲軸【寬度】 */
+    width: 16px;
+}
+::-webkit-scrollbar-track { /* 網頁捲軸【背景】顏色 */
+    background: var(--Clg);
+}
+::-webkit-scrollbar-thumb { /* 網頁捲軸【把手】顏色 */
+    background: var(--Clpp);
+    border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {/* 網頁捲軸【滑過時】把手的顏色 */
+    background: var(--CLogoP);
+}
+
+#faq ul::-webkit-scrollbar-track { /* 網頁捲軸【背景】顏色 */
+    border-radius: 20px;
+}
 
 /* 新寫法!!! */
 .circleBTN {
