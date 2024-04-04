@@ -168,8 +168,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  div#header{
-  }
   .headerOpen{
     background-color: var(--CLogoP);
   }
@@ -184,9 +182,7 @@
     .ph {
       display: block;
       >div{
-        // width: 100%;
         display: flex;
-        // gap: 22vw;
         justify-content: space-between;
         align-items: center;
       }
@@ -204,7 +200,7 @@
       margin: auto 0;
       position: absolute;
       cursor: pointer;
-      -webkit-touch-callout: none;
+      -webkit-touch-callout: none; // 这个CSS 属性禁用了默认的 callout 展示，callout 是指当触摸并按住一个元素的时候出现的提示。当在 iOS 上一直按住一个目标元素时，Safari 会展示一个关于这个链接的 callout 信息。webkit-touch-callout属性允许禁用掉这一行为。
       z-index: 2;
       opacity: 0;
     }

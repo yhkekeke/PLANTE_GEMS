@@ -2,7 +2,6 @@
 $(function(){
   $(".phMenu>input").change(function(){
     var checked = $(".phMenu>input:checked").length;
-    console.log(checked);
     if( checked==0 ){
       $(document).find(".menu").removeClass("menuOpen").slideUp(750, "easeInOutBack");
       $(document).find("div#header").removeClass("headerOpen");
@@ -60,11 +59,11 @@ $(function(){
   $("header").find("dl").mouseenter(function(e){
     $(this).find("dd").stop(true).slideToggle(300,'linear');
     $(this).find("dt").addClass("headerShow")
-    $(this).find("dd").addClass("headershow");
+    $(this).find("dd").addClass("headerShow");
   }).mouseleave(function(e){
     $(this).find("dd").stop(true).slideToggle(300,'linear');
     $(this).find("dt").removeClass("headerShow");
-    $(this).find("dd").removeClass("headershow");
+    $(this).find("dd").removeClass("headerShow");
   })
 });
 
@@ -221,7 +220,7 @@ $(function(){
     if(!faqA.is(":visible")){
       faqA.slideDown(750, "easeOutCubic");
       $(this).find(".faq_q>p").addClass("showColor");
-      console.log($(this))
+      // console.log($(this))
       $(this).find(".circleBTN>p").addClass('down');
     }
   })
@@ -284,100 +283,23 @@ $(function() {
   textApic('#index .diamonwristband', 'p');
 });
 
-
-
-
-// 控制顯示"goToTopBtn"的時機(依照視口滾動)
-// window.onscroll = function() {
-//     scrollFunction();
-// };
-
-// function scrollFunction() {
-//     var button = document.getElementById("goToTopBtn");
-
-//     // 在第一視口時隱藏，之後顯示
-//     if(window.scrollY >= window.innerHeight){
-//         button.style.display = "block";
-//     }else{
-//         button.style.display = "none";
-//     }
-// }
-
-// $(function () {
-//     let index = 0;
-//     let timer;
-//     let interval = 4000;
-
-//     function carousel() {
-
-//         let divWidth = $('#spotlight').width();
-//         let imgcount = $('#spotlight section').length;
-
-//         $('.carousel>div').width(divWidth);
-//         $('#spotlight').width(divWidth * imgcount);
-//         $('#spotlight').css('left', divWidth * index * -1);
-
-//         // 清空並重新生成 #contentButton
-//         $('#contentButton').empty();
-//         for (let i = 0; i < imgcount; i++) {
-//             $('#contentButton').append('<li></li>');
-//         }
-//         $('#contentButton li:first').addClass('clicked');
-
-//         // 重新綁定點擊事件
-//         $('#contentButton li').click(function () {
-//             clearInterval(timer);
-//             index = $(this).index();
-
-//             $('#spotlight').animate({
-//                 left: divWidth * index * -1,
-//             });
-
-//             $(this).addClass('clicked');
-//             $('#contentButton li').not(this).removeClass('clicked');
-
-//             startTimer();
-//         });
-//         startTimer(); // 確保最初設置計時器
-//     }
-
-//     function startTimer() {
-//         clearInterval(timer); // 清除現有計時器
-//         timer = setInterval(moveToNext, interval);
-//     }
-
-//     function moveToNext() {
-//         switchImage();
-//         startTimer(); // 在每次触发定时器时重新设置
-//     }
-    
-//     function switchImage() {
-//         let divWidth = $('.carousel').width();
-//         let imgcount = $('#spotlight section').length;
-    
-//         if (index < imgcount - 1) {
-//             index++;
-//         } else {
-//             index = 0;
-//         }
-    
-//         $('#spotlight').animate({
-//             left: divWidth * index * -1,
-//         });
-    
-//         $(`#contentButton li:eq(${index})`).addClass('clicked');
-//         $('#contentButton li').not(`:eq(${index})`).removeClass('clicked');
-//     }
-    
-//     // 初始化
-//     carousel();
-//     startTimer(); // init初始化末行已執行這項，這行能否不要???(不確定)
-
-//     // 視窗大小改變時重新計算輪播尺寸和 #contentButton
-//     $(window).resize(function () {
-//         clearInterval(timer);
-//         $('#soptlight').stop(true, true); // 停止当前动画并立即完成
-//         initializeSlider();
-//         startTimer();
-//     });
-// });
+var gototop = $(document).find(".gototop");
+/** 控制顯示"gototop"的時機(依照視口滾動) */
+$(window).on("scroll", function(){
+  // console.log('scrolling');
+  var windowHeight = document.documentElement.clientHeight;
+  var scrollHeight = $(window).scrollTop();
+  if( scrollHeight>windowHeight ){
+    $(gototop).removeClass("none");
+  }else{
+    $(gototop).addClass("none");
+  }
+})
+/** gototop click event */
+$(gototop).on("click", function(){
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  })
+})

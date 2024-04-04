@@ -44,6 +44,7 @@ body {
   background-color: var(--Cpw);
   text-align: justify;
   cursor: url(../pic/cursor.png), default;
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -1825,11 +1826,33 @@ div#header {
   transform: translateY(-50px);
   text-align: center;
 }
+#gototop .gototop{
+  position: relative;
+  bottom: 5vh;
+}
 #gototop .gototop div{
   font-size: 30px;
   width: 40px;
   height: 41px;
 }
+
+@keyframes show{
+  0% {
+    transform: rotate(0deg);
+  }
+  25%{
+    opacity: .5;
+    transform: rotate(-3deg) translateY(-40px);
+  }
+  75%{
+    transform: rotate(3deg);
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}  
+
 
 
 div#header.none {
@@ -1943,7 +1966,7 @@ header nav dd a+a {
   border-top: 1px solid var(--Clpp);
 }
 
-header nav dd.headershow {
+header nav dd.headerShow {
   display: block;
 }
 
