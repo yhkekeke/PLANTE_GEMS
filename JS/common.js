@@ -57,19 +57,18 @@ $(document).scroll(function(){
 /** header nav hover */
 $(function(){
   $("header").find("dl").mouseenter(function(e){
-    $(this).find("dd").stop(true).slideToggle(300,'linear');
-    $(this).find("dt").addClass("headerShow")
-    $(this).find("dd").addClass("headerShow");
+    // .stop(true)：用來停止先前的動畫效果
+    $(this).find("dt").addClass("headerShow");
+    $(this).find("dd").removeClass("none").addClass("headershow");
   }).mouseleave(function(e){
-    $(this).find("dd").stop(true).slideToggle(300,'linear');
     $(this).find("dt").removeClass("headerShow");
-    $(this).find("dd").removeClass("headerShow");
+    $(this).find("dd").addClass("none").removeClass("headershow");
   })
 });
 
 /** header&footer icon hover */
 $(function(){
-  function attrChange(touch, changeEle , content, changeTo, backedTo){
+  function attrChange(touch, changeEle, content, changeTo, backedTo){
     $(touch).mouseenter(function(){ 
       $(this).find(changeEle).attr(content, changeTo);
     }).mouseleave(function() {

@@ -139,7 +139,9 @@ footer dl {
 }
 
 .p3,
-header .search input::placeholder {
+header .search input::placeholder,
+#login input,
+#login input::placeholder{
   font: 300 14px/171.428571% var(--Fp);
 }
 
@@ -1784,6 +1786,74 @@ section.oneItem:hover .textBGC,
   /* margin-bottom: -88px; */
 }
 
+
+#login .path{
+  margin-top: 8vw;
+  margin-bottom: 1vw;
+}
+
+#login .box{
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  /* min-width: 800px; */
+  height: 70vh;
+  /* min-height: 500px; */
+  padding: 2.5vw;
+  border-radius: 12px;
+  background-color: var(--Clg);
+  box-shadow: 10px 10px 10px var(--CHlinear70p), -10px -10px 10px var(--Cwhite70p) ;
+  /* offset-x | offset-y | blur-radius | color */
+}
+
+#login .boxContent{
+  width: 600px;
+  margin: 0;
+}
+#login .signup{
+  width: 350px;
+  z-index: 100;
+  left: calc(100% - 600px );
+}
+#login .login{
+  width: 350px;
+  z-index: 100;
+  right: calc(100% - 600px );
+}
+#login form{
+}
+#login form>div{
+  margin-bottom: 20px;
+  position: relative;
+  /* margin-top: 1rem; */
+  width: 100%;
+}
+#login input{
+  width: 350px;
+  height: 40px;
+  padding-left: 8px;
+  /* padding: 8px; */
+  border-radius: 12px;
+  border: 1px var(--Cdg) solid;
+  background-color: transparent;
+  caret-color: var(--Clpp);
+}
+#login label{
+  font-weight: 700;
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: var(--Cblack);
+}
+#login input::placeholder{
+  opacity: 0;
+}
+
+
+
+
+
+
 /** header */
 div#header {
   position: fixed;
@@ -1851,9 +1921,7 @@ div#header {
     opacity: 1;
     transform: rotate(0deg);
   }
-}  
-
-
+}
 
 div#header.none {
   display: none;
@@ -1941,17 +2009,13 @@ header .search input {
 }
 
 header nav dt {
-  padding-bottom: 3vw;
+  padding-bottom: 2vw;
   width: 80px;
 }
 
 footer dl {
   color: var(--Cdg);
   /* white-space: nowrap; */
-}
-
-header nav dd {
-  display: none;
 }
 
 header nav dd a {
@@ -1966,7 +2030,7 @@ header nav dd a+a {
   border-top: 1px solid var(--Clpp);
 }
 
-header nav dd.headerShow {
+header nav dd.headershow {
   display: block;
 }
 
@@ -2001,15 +2065,15 @@ header .search.grow {
 }
 
 header .search input,
-header .search input::placeholder {
+header .search input::placeholder,
+#login input,
+#login input::placeholder {
   color: var(--Cbrown);
   vertical-align: middle;
 }
 
 header input {
-  outline: none;
   padding-right: -8px;
-  border: none;
   background-color: var(--Copacity);
   caret-color: var(--Clpp);
   width: 100%;
@@ -2021,7 +2085,6 @@ footer a {
 }
 
 div#footer {
-
   bottom: 0;
   width: 100%;
   /* max-height: 400px; */
@@ -2123,11 +2186,6 @@ footer dl a:hover {
   font-weight: 500;
   padding-bottom: 4px;
 }
-
-/* footer nav{
-    grid-template-columns: repeat(2, 1fr) auto;
-    align-items: flex-start;
-} */
 
 .fixed {
   position: fixed;

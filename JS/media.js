@@ -22,8 +22,6 @@ $(function () {
   if (isMobile()) {
     $(document).scroll(function () {
       scrollBack("header");
-      // scrollBack("aside");
-      // 這個沒成功，因為她是sticky?
     });
   }
 })
