@@ -10,11 +10,11 @@ $(function () {
   // 3. 沒有設置，默認值通常為空字符串 ''。這表示使用默認的同源策略，即只能請求同一域的資源，不允許跨域請求。
 
   $("body").prepend('<div id="header"></div>');
-  $("#header").load("../header.html");
+  $("#header").load("header.html");
   $("body").append('<div id="footer"></div>');
-  $("#footer").load("../footer.html");
+  $("#footer").load("footer.html");
   $("body").append('<div id="gototop"></div>');
-  $("#gototop").load("../gototop.html");
+  $("#gototop").load("gototop.html");
   // append 將元素加到指定元素的末尾
   // prepend 將元素加到指定元素的開頭
 });
