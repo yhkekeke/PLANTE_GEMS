@@ -1,5 +1,6 @@
 PLANTE GEMS
 ===
+[專案正式上線網址](https://yhkekeke.github.io/PLANTE_GEMS/)
 
 ![image](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_db2e4bad39cdd148a7fc1702a5c0a3f2.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1713599485&Signature=P20PamIbNL4JypRipUiRSrK6ZDk%3D)
 
@@ -37,9 +38,6 @@ PLANTE GEMS
 | pic      | 圖片資源放置處        |
 | scss     | RWD的scss檔案放置處   |
 | --       | 大部分 HTML檔案放置處 |
-
-## 測試帳號密碼
-* [專案正式上線網址](https://yhkekeke.github.io/PLANTE_GEMS/)
 
 ## 在 Local 端的安裝＆運行步驟
 1. 取得專案
