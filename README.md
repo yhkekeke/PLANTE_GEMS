@@ -1,4 +1,4 @@
 PLANTE GEMS
 ===
 
-![images](https://hackmd.io/_uploads/rJccfy-b0.png)
+![image](https://hackmd.io/_uploads/rJccfy-b0.png)
