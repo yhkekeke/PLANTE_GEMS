@@ -31,13 +31,13 @@ PLANTE GEMS
 ## 資料夾說明
 | :file_folder: 資料夾名稱 | :memo: 說明 |
 | -------- | ------------- |
-| CSS      | CSS檔案 與 scss轉檔後 css檔案放置處 |
+| CSS      | CSS 檔案與 SCSS 轉檔後 CSS 檔案放置處 |
 | JS       | JavaScript 檔案放置處 |
-| about    | about 子層的 HTML檔案放置處 |
+| about    | about 子層的 HTML 檔案放置處 |
 | collections | collections 子層的 HTML 放置處 |
 | pic      | 圖片資源放置處        |
-| scss     | RWD的scss檔案放置處   |
-| --       | 大部分 HTML檔案放置處 |
+| scss     | RWD 的 SCSS 檔案放置處   |
+| --       | 大部分 HTML 檔案放置處 |
 
 ## 在 Local 端的安裝＆運行步驟
 1. 取得專案
